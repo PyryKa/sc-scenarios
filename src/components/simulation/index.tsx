@@ -4,7 +4,7 @@ import { SimulationContextProvider } from "../../contexts/simulationContext";
 import { TransformMode } from "../../utils/enums/transform-modes";
 import SideDrawer from "./side-drawer";
 import { SimulationContainer } from "./styles";
-import ThreeCanvas from "./three-canvas-wrapper";
+import ThreeCanvasWrapper from "./three-canvas-wrapper";
 import Timeline from "./timeline";
 
 interface Simulation {
@@ -63,7 +63,7 @@ const Simulation = (props: Simulation) => {
         <SimulationContextProvider value={simulationContextValues}>
             <SimulationContainer>
                 <SideDrawer />
-                <ThreeCanvas />
+                <ThreeCanvasWrapper />
                 <Timeline />
             </SimulationContainer>
         </SimulationContextProvider>
